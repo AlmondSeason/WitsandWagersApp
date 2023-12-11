@@ -33,10 +33,9 @@ const Players = (params) =>
     {
         let arr = (csl.split(","));
         let JSONSTRING = "";
-        let i = 0;
-        const promises = arr.map(v =>
+        arr.forEach(v =>
         {
-            JSONSTRING += '{"name":' + '\"' + v + '\"' + ', "money": 1000 }';
+            JSONSTRING += '{"name":' + '"' + v + '"' + ', "money": 1000 }';
         });
 
         const JSONOBJ = JSON.parse(JSONSTRING);

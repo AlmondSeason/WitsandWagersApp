@@ -16,7 +16,7 @@ const Input = (params) =>
         <label style={params.styler} >
             {params.label}
             <input style={buttonStyler} type={params.type} onChange={params.onChangeFunc}
-                onClick={() => { if (params.onClickFunc != null) { params.onClickFunc(); } if (!params.noReload && params.type == "submit") { /*location.reload();*/ } }}
+                onClick={() => { if (params.onClickFunc != null) { params.onClickFunc(); } if (!params.noReload && params.type === "submit") { /*location.reload();*/ } }}
                 pattern={params.pattern} value={params.value} id={params.id} name={params.name} label={params.label} required />
         </label>
     )

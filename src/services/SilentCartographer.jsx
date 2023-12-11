@@ -1,5 +1,4 @@
 import axios from 'axios';
-const URL = "http://localhost:3001/";
 const playerURL = "http://localhost:3001/players";
 const questionURL = "http://localhost:3001/questions";
 

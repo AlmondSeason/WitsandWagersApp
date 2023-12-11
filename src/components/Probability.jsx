@@ -38,7 +38,7 @@ const Probability = (params) =>
     {
         params.update();
         const promises = []
-        if (myInterval != 0)
+        if (myInterval !== 0)
         {
             setMyInterval(0);
             clearInterval(myInterval);
@@ -79,7 +79,7 @@ const Probability = (params) =>
     const startRoll = () =>
     {
         params.update();
-        if (myInterval == 0)
+        if (myInterval === 0)
         {
             setMyInterval(setInterval(setMarginLeft, 100));
         }
@@ -137,8 +137,8 @@ const Probability = (params) =>
                 <div style={{ fontSize: fontSizeStyle, color: "yellow", backgroundColor: "black", textAlign: "center", width: "100%" }}>{winningProb}</div>
                 <h2 style={{ color: "white", fontSize: "50px", textAlign: "center", margin: "0" }}> Bet on Random Chance </h2>
                 <div style={{ textAlign: "center"}}>
-                    <Input styler={{ margin: "5px", marginBottom: "30px", fontSize: fontSizeStyle, verticalAlign: "center", fontSize: "36px" }} noReload={true} type="submit" value="Roll" onClickFunc={startRoll} onChangeFunc={null} />
-                    <Input styler={{ margin: "5px", marginBottom: "30px", fontSize: fontSizeStyle, verticalAlign: "center", fontSize: "36px" }} noReload={true} type="submit" value="Stop" onClickFunc={stopRoll} onChangeFunc={null} />
+                    <Input styler={{ margin: "5px", marginBottom: "30px", verticalAlign: "center", fontSize: "36px" }} noReload={true} type="submit" value="Roll" onClickFunc={startRoll} onChangeFunc={null} />
+                    <Input styler={{ margin: "5px", marginBottom: "30px", verticalAlign: "center", fontSize: "36px" }} noReload={true} type="submit" value="Stop" onClickFunc={stopRoll} onChangeFunc={null} />
                 </div>
                 <table style={{ borderCollapse: "collapse", height: "100px", minWidth: probabilityBoardWidth + "px", maxWidth: probabilityBoardWidth + "px", flexDirection: "column", backgroundColor: "lightgrey", marginBottom: "2em" }}>
                     <thead style={{ borderColor: "white", height: "100px" }}>

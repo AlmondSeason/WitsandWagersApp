@@ -76,7 +76,7 @@ const Trivia = (params) =>
         const promises = [];
         const mult = convertTextToNum(winningMultString);
 
-        players.map(v =>
+        players.forEach(v =>
         {
             let newMoney = 0;
             // add money to player

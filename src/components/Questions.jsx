@@ -31,7 +31,7 @@ const Questions = (params) =>
     const toggleVisibility = () =>
     {
         const obj = document.getElementById("answerButton").parentElement;
-        if (obj.style.visibility == "visible")
+        if (obj.style.visibility === "visible")
         {
             obj.style.visibility = "hidden";
         }
